@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>To-Do's'</title>
+</head>
+
+<body>
+    <h1 class="text-5xl text-white text-center mt-44" >My To-Do List</h1>
+    <div class="bg-white rounded-xl w-[700px] h-fit mx-auto mt-10">
+        <div id="tasks" class="w-[600px] h-fit flex">
+            <input type="text" placeholder="New task?" class="w-[500px] h-[60px] border-[#D9D9D9] border-2 rounded-l-3xl my-[20px] ml-10 ">
+            <button type="submit" class="w-[100px] h-[60px] border-[#D9D9D9] bg-[#9C6ECA] my-[20px] rounded-r-3xl"><img src="img/add.png" class="w-[40px] h-[40px] m-auto"></button>
+        </div>
+        <div class="" id="tasks">
+            <div class="bg-[#399797]/50 w-[550px] mx-auto rounded-xl h-[70px] mt-3 flex" id="tasks">
+                <p class="ml-10 my-auto text-2xl text-gray-700">Repair car</p>
+                <button class="justify-end"><img src="img/delete.png"></button>
+            </div>
+            <div class="bg-[#399797]/50 w-[550px] mx-auto rounded-xl h-[70px] mt-3 flex" id="tasks">
+                <p class="ml-10 my-auto text-2xl text-gray-700">Repair car</p>
+                <button class="justify-end"><img src="img/delete.png"></button>
+            </div>
+            <div class="bg-[#399797]/50 w-[550px] mx-auto rounded-xl h-[70px] mt-3 flex" id="tasks">
+                <p class="ml-10 my-auto text-2xl text-gray-700">Repair car</p>
+                <button class="justify-end"><img src="img/delete.png"></button>
+            </div>
+        </div>
+        <div class="clearAll">
+            <p class="copyright">@Szymon_Perfikowski</p>
+            <button class="clearAll">Clear All</button>
+        </div>
+    </div>
+</body>
+</html>
