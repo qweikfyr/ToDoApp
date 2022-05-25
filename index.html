@@ -6,34 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="styles.css" rel="stylesheet">
+
     <title>To-Do's'</title>
+
+    <style type="text/tailwindcss">
+        
+        .taskBg {
+            @apply bg-[#399797]/50 mx-16 rounded-2xl h-[70px] mb-4 flex 
+        }
+
+        .topic {
+            @apply m-auto text-2xl text-gray-700 ml-5
+        }
+
+        .delete {
+            @apply bg-red-600 rounded-r-2xl 
+        }
+
+        .bin {
+            @apply mx-5 w-[40px] h-[40px] m-auto 
+        }
+
+    </style>
+
 </head>
 
-<body>
-    <h1 class="text-5xl text-white text-center mt-44" >My To-Do List</h1>
-    <div class="bg-white rounded-xl w-[700px] h-fit mx-auto mt-10">
-        <div id="tasks" class="w-[600px] h-fit flex">
-            <input type="text" placeholder="New task?" class="w-[500px] h-[60px] border-[#D9D9D9] border-2 rounded-l-3xl my-[20px] ml-10 ">
-            <button type="submit" class="w-[100px] h-[60px] border-[#D9D9D9] bg-[#9C6ECA] my-[20px] rounded-r-3xl"><img src="img/add.png" class="w-[40px] h-[40px] m-auto"></button>
+<body class="">
+
+                                            <!-- HEADER -->
+
+    <h1 class="text-5xl text-white text-center mt-44 mb-10" >My To-Do List</h1>
+
+                                            <!-- CONTENT -->
+
+    <div class=" w-[700px] h-fit px-5 bg-white rounded-xl mx-auto">
+
+                                    <!-- BAR WHERE YOU ADDING NEW TASKS  -->
+
+        <div class="h-fit flex justify-center">
+            <input type="text" placeholder="New task?" class="w-[500px] h-[60px] border-[#D9D9D9] border-2 rounded-l-3xl my-5 p-5 placeholder:text-center placeholder:text-xl">
+            <button type="button" class="w-[100px] h-[60px] border-[#D9D9D9] bg-[#9C6ECA] rounded-r-3xl my-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110"><img src="img/add.png" class="w-[40px] h-[40px] m-auto"></button>
         </div>
-        <div class="" id="tasks">
-            <div class="bg-[#399797]/50 w-[550px] mx-auto rounded-xl h-[70px] mt-3 flex" id="tasks">
-                <p class="ml-10 my-auto text-2xl text-gray-700">Repair car</p>
-                <button class="justify-end"><img src="img/delete.png"></button>
+
+                                            <!-- TASKS TO DO -->
+
+        <!-- <div class="">
+
+            <div class="taskBg">
+                <p class="topic">Repair car</p>
+                <button class="delete"><img src="img/delete.png" class=" bin "></button>
             </div>
-            <div class="bg-[#399797]/50 w-[550px] mx-auto rounded-xl h-[70px] mt-3 flex" id="tasks">
-                <p class="ml-10 my-auto text-2xl text-gray-700">Repair car</p>
-                <button class="justify-end"><img src="img/delete.png"></button>
+
+            <div class="taskBg">
+                <p class="topic">Repair car</p>
+                <button class="delete"><img src="img/delete.png" class=" bin "></button>
             </div>
-            <div class="bg-[#399797]/50 w-[550px] mx-auto rounded-xl h-[70px] mt-3 flex" id="tasks">
-                <p class="ml-10 my-auto text-2xl text-gray-700">Repair car</p>
-                <button class="justify-end"><img src="img/delete.png"></button>
+
+            <div class="taskBg">
+                <p class="topic">Repair car</p>
+                <button class="delete"><img src="img/delete.png" class=" bin "></button>
             </div>
+        </div> -->
+
+        <ul>
+            <li class="taskBg">
+                <p class="topic">Repair car</p>
+                <button class="delete"><img src="img/delete.png" class=" bin "></button>
+            </li>
+            <li class="taskBg">
+                <p class="topic">Repair car</p>
+                <button class="delete"><img src="img/delete.png" class=" bin "></button>
+            </li>
+            <li class="taskBg">
+                <p class="topic">Repair car</p>
+                <button class="delete"><img src="img/delete.png" class=" bin "></button>
+            </li>
+        </ul>
+
+                                    <!-- COPYRIGHT AND CLEAR ALL BUTTON-->
+
+        <div class="flex h-fit w-full flex justify-end">
+            <button class=" my-1 rounded-2xl bg-[#D9D9D9] mb-5 h-10 w-24 mx-5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-500">Clear All</button>
         </div>
-        <div class="clearAll">
-            <p class="copyright">@Szymon_Perfikowski</p>
-            <button class="clearAll">Clear All</button>
-        </div>
+
+
+
     </div>
+
+    <footer class=" bg-black/20 text-gray-700/50 text-center absolute inset-x-0 bottom-0 ">@Szymon_Perfikowski</footer>
 </body>
 </html>
